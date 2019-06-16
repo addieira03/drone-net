@@ -1,11 +1,11 @@
 import glob
 import os
-import Tkinter
-import Tkconstants
-import tkFileDialog
+from tkinter import *
+from tkinter import filedialog
+
 while True:
     print("Please select your image directory.")
-    current_dir = tkFileDialog.askdirectory()
+    current_dir = filedialog.askdirectory()
     if current_dir == None or current_dir == "":
         print("You must select a directory.")
         continue
